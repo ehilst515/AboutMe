@@ -16,4 +16,3 @@ if (lowerMyLocation === 'yes'){
   alert ('You must enter yes or no.');
 }
 
-
