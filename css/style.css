@@ -4,6 +4,11 @@ body{
 
 h1{
     color:#CFD11A;
+    background-color: #91C499;
+    display: inline;
+    padding: 20px;
+    border-radius: 10px;
+ 
 }
 
 h2{
@@ -12,4 +17,5 @@ h2{
 
 p{
     color: #595959;
+
 }
