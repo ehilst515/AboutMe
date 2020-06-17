@@ -64,3 +64,28 @@ if (lowerMySister === 'yes'){
 } else {
   alert ('Invalid entery');
 }
+
+
+// Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
+// It should give the user exactly four opportunities to get the correct answer.
+var chanceCount = 0;
+var numGuess = prompt('Guess a number 1-10.');
+
+while (chanceCount > 0);
+
+// Indicates through an alert if the guess is “too high” or “too low”.
+var guess = Number(numGuess);
+if (guess < 6){
+  alert ('Too low!');
+} else if (guess > 6){
+  alert ('Too high!');
+} else if (guess === 6){
+  chanceCount = 0;
+  alert ('You guessed correctly!');
+} else {
+  alert ('You didn\'t guess a number...');
+}
+
+// After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
+chanceCount = chanceCount - 1;
+console.log('guessCount is' + chanceCount);
