@@ -44,3 +44,24 @@ if (secondAnswer === 'yes'){
   alert ('You must enter yes or no.');
   secondQuestion();
 }
+
+// Third quesition: ask user if I've travelled outside of the country
+// Function to ask third question and convert answer to lower case
+function thirdQuestion(){
+  var myTravel = prompt('Have I travelled outside of the country?','yes or no');
+  var lowerMyTravel = myTravel.toLowerCase();
+  console.log(lowerMyTravel);
+  return lowerMyTravel;
+}
+
+
+// Check input and respond to travel question
+var thirdAnswer = thirdQuestion();
+if (thirdAnswer === 'yes'){
+  alert ('True! I have visted 11 countries.');
+} else if (thirdAnswer === 'no'){
+  alert ('False! I have visted 11 countries.');
+} else {
+  alert ('You must enter yes or no.');
+  secondQuestion();
+}
