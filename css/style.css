@@ -8,6 +8,7 @@ h1{
     display: inline;
     padding: 20px;
     border-radius: 10px;
+    margin: 30px;
  
 }
 
@@ -15,7 +16,6 @@ h2{
     color: #808F85;
 }
 
-p{
+p, ul, ol{
     color: #595959;
-
 }
