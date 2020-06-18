@@ -1,7 +1,7 @@
 'use strict';
 
 // // Ask user 5 yes or no questions
-
+var userpoint = 0;
 // First quesition: ask user if I'm from DSM
 // var myLocation = prompt('Am I from Greater Des Moines?','yes or no');
 // var lowerMyLocation = myLocation.toLowerCase();
@@ -67,64 +67,69 @@
 
 // // Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
 // It should give the user exactly four opportunities to get the correct answer.
-var chanceCount = 0;
-var guess;
-while (chanceCount < 4){
-  var numGuess = prompt('Guess a number 1-10. You have used ' + chanceCount + ' chance out of 4');
-  console.log(numGuess);
-  guess = Number(numGuess);
-  console.log(guess);
-  // Indicates through an alert if the guess is "too high" or "too low".
-  if(guess === 6){
-    alert('You guessed correctly!');
-    chanceCount = 4;
-    break;
-  }
-  if(guess < 6){
-    chanceCount++;
-    alert('To Low, click ok.');
-  } else if (guess > 6){
-    alert('to high, click ok.');
-    chanceCount++;
-    console.log(chanceCount);
-  } else {
-    alert('You didn\'t guess the number...');
-  }
-}
-
-
-// After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
-console.log('guessCount is' + chanceCount);
-
-
-
-// // Add a 7th question that has multiple possible correct answers that are stored in an array.
-
-
-var guesses = 0;
-var lowerCase = [];
-var travelledCountries = ['Colombia', 'Panama', 'Costa Rica', 'Mexico' , 'USA', 'Canada', 'Spain', 'France', 'Germany', 'Jordan', 'Oman', 'UAE'];
-for (var x = 0; x < travelledCountries.length; x++) {
-  lowerCase.push(travelledCountries[x].toLowerCase());
-}
-// Give the user 6 attempts to guess the correct answer.
-while(guesses < 6){
-  var myCountries = prompt('Guess a country that I\'ve travelled to.').toLowerCase().trim();
-  for(var i = 0; i < lowerCase.length; i++){
-    if( myCountries === lowerCase[i]) {
-      alert('your right.');
-      guesses = 6;
-      //userpoint++
+function lab04(){
+  var chanceCount = 0;
+  var guess;
+  while (chanceCount < 4){
+    var numGuess = prompt('Guess a number 1-10. You have used ' + chanceCount + ' chance out of 4');
+    console.log(numGuess);
+    guess = Number(numGuess);
+    console.log(guess);
+    // Indicates through an alert if the guess is "too high" or "too low".
+    if(guess === 6){
+      alert('You guessed correctly!');
+      chanceCount = 4;
+      userpoint++;
       break;
-    } //close if
-  }//close for loop
-  if(guesses !== 6){
-    alert(' Not there, try again.');
+    }
+    if(guess < 6){
+      chanceCount++;
+      alert('To Low, click ok.');
+    } else if (guess > 6){
+      alert('to high, click ok.');
+      chanceCount++;
+      console.log(chanceCount);
+    } else {
+      alert('You didn\'t guess the number...');
+    }
   }
-  guesses++;
-}
-//close while
-alert('no more trys I went here ' + travelledCountries);
+
+
+  // After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
+  console.log('guessCount is' + chanceCount);
+
+
+
+  // // Add a 7th question that has multiple possible correct answers that are stored in an array.
+
+
+  var guesses = 0;
+  var lowerCase = [];
+  var travelledCountries = ['Colombia', 'Panama', 'Costa Rica', 'Mexico' , 'USA', 'Canada', 'Spain', 'France', 'Germany', 'Jordan', 'Oman', 'UAE'];
+  for (var x = 0; x < travelledCountries.length; x++) {
+    lowerCase.push(travelledCountries[x].toLowerCase());
+  }
+  // Give the user 6 attempts to guess the correct answer.
+  while(guesses < 6){
+    var myCountries = prompt('Guess a country that I\'ve travelled to.').toLowerCase().trim();
+    for(var i = 0; i < lowerCase.length; i++){
+      if( myCountries === lowerCase[i]) {
+        alert('your right.');
+        guesses = 6;
+        userpoint++;
+        break;
+      } //close if
+    }//close for loop
+    if(guesses !== 6){
+      alert(' Not there, try again.');
+    }
+    guesses++;
+  }
+  //close while
+  alert('no more trys I went here ' + travelledCountries);
+  alert('Total Score:' + userpoint);
 // Consider using a loop of some sort for this question.
 // Display all the possible correct answers to the user.
 // The guesses will end once the user guesses a correct answer or they run out of attempts.
+}
+lab04();
