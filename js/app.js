@@ -1,6 +1,6 @@
 // 'use strict';
 
-// // // Ask user 5 questions
+// // // Ask user 5 yes or no questions
 
 // // First quesition: ask user if I'm from DSM
 // var myLocation = prompt('Am I from Greater Des Moines?','yes or no');
@@ -65,29 +65,60 @@
 //   alert ('Invalid entery');
 // }
 
-
-// Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
+// // Add a 6th question to the guessing game that takes in a numeric input by prompting the user to guess a number.
 // It should give the user exactly four opportunities to get the correct answer.
-var chanceCount = 0;
-var numGuess = prompt('Guess a number 1-10. You have 4 chances.');
-
-while (chanceCount > 0);
-
-// Indicates through an alert if the guess is “too high” or “too low”.
+var chanceCount = 1;
+var numGuess = prompt('Guess a number 1-10. You have 4 chances total.');
 var guess = Number(numGuess);
-if (guess < 6){
-  alert ('Too low!');
-} else if (guess > 6){
-  alert ('Too high!');
-} else if (guess === 6){
-  alert ('You guessed correctly!');
-  chanceCount = 0;
-} else {
-  alert ('You didn\'t guess a number...');
+
+while (chanceCount < 5){
+
+  // Indicates through an alert if the guess is “too high” or “too low”.
+  if (guess < 6){
+    alert ('Too low!');
+    chanceCount++;
+    console.log(chanceCount);
+    numGuess = prompt('You guessed too low. Guess again.');
+  } else if (guess > 6){
+    alert ('Too high!');
+    chanceCount++;
+    console.log(chanceCount);
+    numGuess = prompt('You guessed too high. Guess again.');
+  } else if (guess === 6){
+    alert ('You guessed correctly!');
+    chanceCount = 5;
+  } else {
+    alert ('You didn\'t guess the number...');
+  }
+
 }
 
+
+
 // After all attempts have been exhausted, tell the user the correct answer. Consider using a loop of some sort.
-chanceCount = chanceCount - 1;
 console.log('guessCount is' + chanceCount);
 
 
+
+// // Add a 7th question that has multiple possible correct answers that are stored in an array.
+
+var myCountries = prompt('Guess a country that I\'ve travelled to.');
+var travelledCountries = ['Colombia', 'Panama', 'Costa Rica', 'Mexico' , 'USA', 'Canada', 'Spain', 'France', 'Germany', 'Jordan', 'Oman', 'UAE'];
+
+// Give the user 6 attempts to guess the correct answer.
+
+// Consider using a loop of some sort for this question.
+
+// var count=travelledCountries.length;
+// for(var i=0;i<count;i++){
+
+// }
+// if(travelledCountries[i]===myCountries)
+
+
+// Display all the possible correct answers to the user.
+
+  console.log(travelledCountries);
+document.getElementById('travelledList').innerHTML = travelledCountries;
+
+// The guesses will end once the user guesses a correct answer or they run out of attempts.
