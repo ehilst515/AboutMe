@@ -78,7 +78,7 @@ function lab04(){
   var chanceCount = 0;
   var guess;
   while (chanceCount < 4){
-    var numGuess = prompt('Guess a number 1-10. You have used ' + chanceCount + ' chance out of 4.');
+    var numGuess = prompt('Guess a number 1-10. You have used ' + chanceCount + ' chances out of 4.');
     console.log(numGuess);
     guess = Number(numGuess);
     console.log(guess);
@@ -99,13 +99,11 @@ function lab04(){
     } else {
       alert('You didn\'t guess the number...');
     }
-    // After all attempts have been exhausted, tell the user the correct answer.
-    alert('The number was 6.');
+    console.log('guessCount is' + chanceCount);
   }
+  // After all attempts have been exhausted, tell the user the correct answer.
+  alert('The number was 6.');
 
-
-
-  console.log('guessCount is' + chanceCount);
 
 
   // // Add a 7th question that has multiple possible correct answers that are stored in an array.
@@ -117,7 +115,7 @@ function lab04(){
   }
   // Give the user 6 attempts to guess the correct answer.
   while(guesses < 6){
-    var myCountries = prompt('Guess a country that I\'ve travelled to.').toLowerCase().trim();
+    var myCountries = prompt('Guess a country that I\'ve travelled to. You have used ' + guesses + ' chances out of 6.').toLowerCase().trim();
     for(var i = 0; i < lowerCase.length; i++){
       if( myCountries === lowerCase[i]) {
         alert('You\'re right.');
