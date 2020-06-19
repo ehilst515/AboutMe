@@ -110,6 +110,8 @@ function lab04(){
   var guesses = 0;
   var lowerCase = [];
   var travelledCountries = ['Colombia', 'Panama', 'Costa Rica', 'Mexico' , 'USA', 'Canada', 'Spain', 'France', 'Germany', 'Jordan', 'Oman', 'UAE'];
+  document.getElementById('travelledList').innerHTML = travelledCountries;
+
   for (var x = 0; x < travelledCountries.length; x++) {
     lowerCase.push(travelledCountries[x].toLowerCase());
   }
