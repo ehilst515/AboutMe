@@ -1,5 +1,7 @@
 'use strict';
 
+alert('Welcome to my page about me! Answer questions in the quiz game to learn more about me.');
+
 // Set user score to 0
 var userpoint = 0;
 
@@ -97,14 +99,12 @@ function lab04(){
       alert('Too high, click ok.');
       chanceCount++;
     } else {
-      alert('You didn\'t guess the number...');
+      alert('You didn\'t guess a number...');
     }
     console.log('guessCount is' + chanceCount);
   }
   // After all attempts have been exhausted, tell the user the correct answer.
   alert('The number was 6.');
-
-
 
   // // Add a 7th question that has multiple possible correct answers that are stored in an array.
   var guesses = 0;
