@@ -6,13 +6,13 @@
     </head>
     <body>
         <header>
-            <h1>Welcome to my about me page!</h1>
+            <h1 id="top">Welcome to my about me page!</h1>
 
 
         </header>
         <main>
+            <img src="img/profilepic.jpg" alt="Profile Picture" class="profilePic">
             <h2>Who am I?</h2>
-            <img src="img/profilepic.jpg" alt="Profile Picture" height="">
                 <ul>
                     <li>My name is Enrique</li>
                     <li>Graduated from Iowa State Univeristy</li>
@@ -27,6 +27,7 @@
                 </ul>
             <h2>My Top 10 Movies</h2>
                 <ol>
+                    <img src="img/fightclubposter.jpg" alt="Fight Club Movie Poster">
                     <li>Fight Club</li>
                     <li>The Fifth Element</li>
                     <li>Donnie Darko</li>
@@ -38,12 +39,21 @@
                     <li>Get Out</li>
                     <li>Split</li>
                 </ol>
+            <hr>
         </main>
         <footer>
-            <strong>You met me at a very strange time in my life.</strong>
+            <h2>Links</h2>
+            <ul>
+                <li><a href="#top">Back to top</a></li>
+                <li><a href="https://fontmeme.com/fight-club-font/" target="_blank"> Fight Club Font; used at the bottom of the page</a></li>
+                <li><a href="https://www.linkedin.com/pulse/how-create-linkedin-badge-your-website-brynne-tillman/" target="_blank"> How to embed a LinkedIn Badge</a></li>
+
+
+            </ul>
             <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="ehilst"><a class="LI-simple-link" href='https://www.linkedin.com/in/ehilst?trk=profile-badge'>Enrique Hilst Robles</a></div>
+            <a><img src="https://fontmeme.com/permalink/200621/74964ff5623f47661b818e7ffdf6e368.png" alt="fight-club-font"></a>
         </footer>
         <script src="js/app.js"></script>
-        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer class="badge"></script>
     </body>
 </html>

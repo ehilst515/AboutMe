@@ -1,20 +1,87 @@
+/*
+
+CSS
+--silver-chalice: hsla(53, 9%, 69%, 1);
+--blue: hsla(239, 99%, 95%, 1);
+--cornflower-blue: hsla(225, 53%, 95%, 1);
+--xiketic: hsla(242, 94%, 13%, 1);
+
+SCSS HEX
+$silver-chalice: #AFAD9Fff;
+$blue: #0307F2ff;
+$cornflower-blue: #7293F2ff;
+$xiketic: #030220ff;
+
+SCSS HSL
+$silver-chalice: hsla(53, 9%, 69%, 1);
+$blue: hsla(239, 99%, 95%, 1);
+$cornflower-blue: hsla(225, 53%, 95%, 1);
+$xiketic: hsla(242, 94%, 13%, 1);
+
+SCSS RGB
+$silver-chalice: rgba(175, 173, 159, 1);
+$blue: rgba(3, 7, 242, 1);
+$cornflower-blue: rgba(114, 147, 242, 1);
+$xiketic: rgba(3, 2, 32, 1);
+
+SCSS Gradient
+$gradient-top: linear-gradient(0deg, #AFAD9Fff, #0307F2ff, #7293F2ff, #030220ff);
+$gradient-right: linear-gradient(90deg, #AFAD9Fff, #0307F2ff, #7293F2ff, #030220ff);
+$gradient-bottom: linear-gradient(180deg, #AFAD9Fff, #0307F2ff, #7293F2ff, #030220ff);
+$gradient-left: linear-gradient(270deg, #AFAD9Fff, #0307F2ff, #7293F2ff, #030220ff);
+$gradient-top-right: linear-gradient(45deg, #AFAD9Fff, #0307F2ff, #7293F2ff, #030220ff);
+$gradient-bottom-right: linear-gradient(135deg, #AFAD9Fff, #0307F2ff, #7293F2ff, #030220ff);
+$gradient-top-left: linear-gradient(225deg, #AFAD9Fff, #0307F2ff, #7293F2ff, #030220ff);
+$gradient-bottom-left: linear-gradient(315deg, #AFAD9Fff, #0307F2ff, #7293F2ff, #030220ff);
+$gradient-radial: radial-gradient(#AFAD9Fff, #0307F2ff, #7293F2ff, #030220ff);
+
+*/
+
 body{
-    background-color: #F2E9DC;
+    background-color: #7293F2;
 }
 
-h1{
-    color:#CFD11A;
-    background-color: rgb(78, 104, 82);
+h1, h2{
+    color:#c2c0b3;
+    background-color: #030220;
     display: inline;
     padding: 20px;
     border-radius: 10px;
-    margin: 30px;
 }
 
 h2{
-    color: #808F85;
+    padding: 10px !important;
+    margin: 20px !important;
+
 }
 
+
 p, ul, ol{
-    color: #595959;
+    color: #030220;
+    font-size: larger;
 }
+
+ .profilePic{
+     border: 20px solid #030220;
+     margin: 20px;
+     margin-top: 30px;
+ }
+
+ img{
+     display: block;
+     margin-bottom: 20px;
+     margin-top: 30px;
+ }
+
+ div, hr{
+     margin-top: 20px;
+     margin-bottom: 30px;
+ }
+ a, a:visited{
+     text-decoration: none;
+     color: #030220;;
+ }
+
+ a:hover{
+     color: #0307F2;
+ }

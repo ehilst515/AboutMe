@@ -7,6 +7,7 @@ This "About Me" webpage will be an interactive webpage where the user will take 
 * Config source [DeltaV 201 Repo](https://github.com/DeltaVCode/cedarrapids-201d6/tree/master/configs)
 * CSS reset: [meyerweb](https://meyerweb.com/eric/tools/css/reset/)
 * [LinkedIn badge source](https://www.linkedin.com/pulse/how-create-linkedin-badge-your-website-brynne-tillman/)
+* Fight Club Font embedded from Font Meme: https://fontmeme.com/fight-club-font/
 ### Reflections and Comments
 * Consider including the answers to your daily journal and submission questions here
 * This is also a good place to reflect on the tools and resources used and learned 
